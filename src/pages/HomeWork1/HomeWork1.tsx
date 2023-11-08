@@ -1,5 +1,6 @@
 import React from 'react';
 import { randomInt } from '@/utils';
+import Dice from './dice';
 import './style.scss';
 
 export const HomeWork1 = () => {
@@ -13,8 +14,8 @@ export const HomeWork1 = () => {
   return (
     <div className="home-work_block">
       <span>Решение домашнего задания №1</span>
-      <span>{value}</span>
-      <button className='throw-dice-button' type="button" onClick={throwDiceHandler}>
+      <Dice value={value} />
+      <button className="throw-dice-button" type="button" onClick={throwDiceHandler}>
         Бросить куб
       </button>
     </div>
