@@ -1,0 +1,10 @@
+.home-work_block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  & > button.throw-dice-button {
+    width: fit-content;
+    margin: 0;
+  }
+}
