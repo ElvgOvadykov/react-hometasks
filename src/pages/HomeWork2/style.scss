@@ -5,13 +5,18 @@
   gap: 10px;
 }
 
-#fixed-height_block {
-  max-width: 250px;
+.fixed-height_block {
+  max-width: 600px;
   max-height: 400px;
   overflow: auto;
+  position: relative;
 }
 
 .scroll-progress_block {
+  position: sticky;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 250px;
   height: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -19,11 +24,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.answer_block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  background-color: white;
 }
