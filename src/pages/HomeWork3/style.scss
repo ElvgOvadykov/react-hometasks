@@ -1,0 +1,14 @@
+.sortable-table {
+  border-collapse: collapse;
+
+  & > th,
+  tr,
+  td {
+    border: 1px solid;
+  }
+
+  & > thead button {
+    height: 20px;
+    width: 20px;
+  }
+}
